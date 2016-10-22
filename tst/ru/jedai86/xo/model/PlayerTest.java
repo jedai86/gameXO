@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jedai86 on 22.10.2016.
- */
 public class PlayerTest {
     @Test
     public void testGetName() throws Exception {
@@ -29,5 +26,4 @@ public class PlayerTest {
 
         assertEquals(expectedValue, actualValue);
     }
-
 }

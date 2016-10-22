@@ -5,9 +5,6 @@ import ru.jedai86.xo.model.exceptions.InvalidPointException;
 
 import java.awt.*;
 
-/**
- * Created by Jedai86 on 22.10.2016.
- */
 public class Field {
     private static final int FIELD_SIZE = 3;
     private static final int MIN_COORDINATE = 0;

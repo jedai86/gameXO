@@ -8,9 +8,6 @@ import java.awt.*;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jedai86 on 22.10.2016.
- */
 public class FieldTest {
     @Test
     public void testGetSize() throws Exception {
@@ -125,6 +122,4 @@ public class FieldTest {
         } catch (final InvalidPointException e) {}
 
     }
-
-
 }
