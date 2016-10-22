@@ -1,7 +1,7 @@
 package ru.jedai86.xo.model;
 
 import ru.jedai86.xo.model.exceptions.AlreadyOccupiedException;
-import ru.jedai86.xo.model.exceptions.InvalidPoinException;
+import ru.jedai86.xo.model.exceptions.InvalidPointException;
 
 import java.awt.*;
 
@@ -18,16 +18,16 @@ public class Field {
         return FIELD_SIZE;
     }
 
-    public Figure getFigure(final Point point) throws InvalidPoinException {
+    public Figure getFigure(final Point point) throws InvalidPointException {
         if (!checkPoint(point)) {
-            throw new InvalidPoinException();
+            throw new InvalidPointException();
         }
         return field[point.x][point.y];
     }
 
-    public void setFigure(final Point point, final Figure figure) throws InvalidPoinException, AlreadyOccupiedException {
+    public void setFigure(final Point point, final Figure figure) throws InvalidPointException, AlreadyOccupiedException {
         if (!checkPoint(point)) {
-            throw new InvalidPoinException();
+            throw new InvalidPointException();
         }
         if (field[point.x][point.y] != null) {
             throw new AlreadyOccupiedException();
